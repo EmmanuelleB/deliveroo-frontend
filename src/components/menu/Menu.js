@@ -13,10 +13,10 @@ const Menu = (props) => {
                     <div className="col1">
                         <h2>{meal.title}</h2>
                         <p>{meal.description}</p>
-                        <h3>{meal.price}</h3>
+                        <h3>{meal.price} €</h3>
                     </div>
                     <div className="col2">
-                        <img src={meal.picture} alt="menu" /> 
+                        {meal.picture && <img src={meal.picture} alt="menu" /> }
                     </div>
                   </div>
                 )

@@ -37,7 +37,7 @@ function App() {
         </div>
      
        
-        {categories.map(category=>{
+        {categories.slice(0,5).map(category=>{
           return( 
             <Menu bigTitle = {category.name} meals={category.meals} />
         
