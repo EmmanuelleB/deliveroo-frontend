@@ -1,15 +1,21 @@
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
 .menus-container{
-    border: 2px solid red;
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
 }
 .menu-container{
     width: 40%;
     background-color: white;
+    border-radius: 5px;
     padding: 20px;   
     display: flex; 
-    flex-shrink: 0;
-    margin: 20px;
+    margin: 15px 30px 15px 0;
 }
 
 .menu-container .col1{
@@ -23,11 +29,11 @@
   
 }
 
-.menu-container h2,
-.menu-container h3{
+.menu-container h3,
+.menu-container h4{
     font-size: 16px;
 }
-.menu-container h3{
+.menu-container h4{
     color:grey;
 }
 .menu-container p{

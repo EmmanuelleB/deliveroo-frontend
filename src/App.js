@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
+import Header from "./components/header/Header";
+import Presentation from "./components/presentation/Presentation";
 import Menu from "./components/menu/Menu";
 
 function App() {
@@ -30,11 +32,9 @@ function App() {
     (<span>En cours de chargement ...</span>)
     : (
       <div>
-        <div>
-          <h1>{data.restaurant.name}</h1>
-          <p>{data.restaurant.description}</p>
-          <img src={data.restaurant.picture} alt="restaurant" style={{width:400}}/>
-        </div>
+        <Header />
+        <Presentation data={data} />
+      
      
        
         {categories.slice(0,5).map(category=>{

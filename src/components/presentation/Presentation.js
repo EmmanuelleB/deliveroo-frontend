@@ -1,0 +1,17 @@
+import "./Presentation.css"
+
+const Presentation = (props) => {
+    const {data}=props;
+  return (
+  <div className="presentation-container">
+    <div className="page-container flex">
+      <div className="col1">
+          <h1>{data.restaurant.name}</h1>
+          <p>{data.restaurant.description}</p>
+      </div>
+      <img src={data.restaurant.picture} alt="restaurant" style={{width:400}}/>
+    </div>
+  </div>);
+}
+
+export default Presentation;

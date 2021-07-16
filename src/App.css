@@ -1,4 +1,7 @@
 /* Other rules */
-body{
-    background-color: #F2F5F5;
+.page-container{
+    width: 1250px;
+    margin: 0 auto;
+    /* border : 2px solid red; */
 }
+
