@@ -25,18 +25,29 @@ h2{
 
 
 .menu-container img{
+    object-fit: cover;
+    border-radius: 5px;
+    height: 150px;
     width: 150px;
   
 }
 
 .menu-container h3,
-.menu-container h4{
+.menu-container .price{
     font-size: 16px;
 }
-.menu-container h4{
+.menu-container .price{
     color:grey;
+    padding-right: 2em;
 }
 .menu-container p{
     color:grey;
     font-size: 12px;
+    padding: 1em 0;
+}
+
+.menu-container .popular{
+    color:orange;
+    font-size: 14px;
+    font-weight: bold;
 }

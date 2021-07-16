@@ -14,7 +14,9 @@ const Menu = (props) => {
                     <div className="col1">
                         <h3>{meal.title}</h3>
                         <p>{meal.description}</p>
-                        <h4>{meal.price} €</h4>
+                        <span className="price">{meal.price} €</span>
+                        {meal.popular && <span className="popular">Populaire</span>} 
+                        
                     </div>
                     <div className="col2">
                         {meal.picture && <img src={meal.picture} alt="menu" /> }
