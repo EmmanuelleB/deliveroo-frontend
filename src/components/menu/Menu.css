@@ -16,6 +16,7 @@ h2{
     padding: 20px;   
     display: flex; 
     margin: 15px 30px 15px 0;
+    cursor: pointer;
 }
 
 .menu-container .col1{
@@ -35,6 +36,10 @@ h2{
 .menu-container h3,
 .menu-container .price{
     font-size: 16px;
+}
+
+.menu-container h3{
+    font-weight: 300;
 }
 .menu-container .price{
     color:grey;
