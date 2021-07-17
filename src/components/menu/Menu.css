@@ -1,58 +1,45 @@
-h2{
-    font-size: 24px;
-    font-weight: bold;
-    margin: 1em 0;
+.menu-container {
+  width: 40%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  margin: 15px 30px 15px 0;
+  cursor: pointer;
 }
 
-.menus-container{
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.menu-container{
-    width: 40%;
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;   
-    display: flex; 
-    margin: 15px 30px 15px 0;
-    cursor: pointer;
+.menu-container .col1 {
+  width: 60%;
+  margin-right: 10px;
 }
 
-.menu-container .col1{
-    width: 60%;
-    margin-right: 10px;
-}
-
-
-.menu-container img{
-    object-fit: cover;
-    border-radius: 5px;
-    height: 150px;
-    width: 150px;
-  
+.menu-container img {
+  object-fit: cover;
+  border-radius: 5px;
+  height: 150px;
+  width: 150px;
 }
 
 .menu-container h3,
-.menu-container .price{
-    font-size: 16px;
+.menu-container .price {
+  font-size: 16px;
 }
 
-.menu-container h3{
-    font-weight: 300;
+.menu-container h3 {
+  font-weight: 300;
 }
-.menu-container .price{
-    color:grey;
-    padding-right: 2em;
+.menu-container .price {
+  color: grey;
+  padding-right: 2em;
 }
-.menu-container p{
-    color:grey;
-    font-size: 12px;
-    padding: 1em 0;
+.menu-container p {
+  color: grey;
+  font-size: 12px;
+  padding: 1em 0;
 }
 
-.menu-container .popular{
-    color:orange;
-    font-size: 14px;
-    font-weight: bold;
+.menu-container .popular {
+  color: orange;
+  font-size: 14px;
+  font-weight: bold;
 }
