@@ -8,7 +8,7 @@ import Category from "./components/category/Category";
 function App() {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-  const [card, setCard] = useState([]);
+  const [cart, setCart] = useState([]);
 
   const categories = data.categories;
 
@@ -33,10 +33,10 @@ function App() {
       <Header />
       <Presentation data={data} />
       {categories.slice(0, 5).map((category) => {
-        return <Category bigTitle={category.name} meals={category.meals} data={data} card={card} setCard={setCard} />;
+        return <Category bigTitle={category.name} meals={category.meals} data={data} cart={cart} setCart={setCart} />;
       })}
       <h2>Panier</h2>
-      {card.map((item) => {
+      {cart.map((item) => {
         <p>{}</p>;
       })}
     </div>

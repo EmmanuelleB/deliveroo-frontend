@@ -2,7 +2,7 @@ import "./Category.css";
 import Menu from "../menu/Menu";
 
 const Categoty = (props) => {
-  const { bigTitle, meals, data, card, setCard } = props;
+  const { bigTitle, meals, data, cart, setCart } = props;
 
   return (
     <>
@@ -11,7 +11,7 @@ const Categoty = (props) => {
 
         <div className="menus-container">
           {meals.map((meal) => {
-            return <Menu meal={meal} data={data} card={card} setCard={setCard} />;
+            return <Menu meal={meal} data={data} cart={cart} setCart={setCart} />;
           })}
         </div>
       </div>

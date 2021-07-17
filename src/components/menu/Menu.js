@@ -1,7 +1,7 @@
 import "./Menu.css";
 
 const Menu = (props) => {
-  const { meal, data, card, setCard } = props;
+  const { meal, data, cart, setCart } = props;
 
   const handleAddCard = (idItem) => {
     let item = null;
@@ -13,8 +13,8 @@ const Menu = (props) => {
       })
     );
     console.log(item);
-    const newCard = [...card, item];
-    setCard(newCard);
+    const newCart = [...cart, item];
+    setCart(newCart);
   };
 
   return (
