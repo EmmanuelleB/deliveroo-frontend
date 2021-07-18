@@ -1,7 +1,7 @@
 import "./Menu.css";
 
 const Menu = (props) => {
-  const { meal, data, cart, setCart } = props;
+  const { meal, data, cart, setCart, quantity, setQuantity, price, setPrice } = props;
 
   const handleAddCard = (idItem) => {
     let item = null;
@@ -13,12 +13,20 @@ const Menu = (props) => {
       })
     );
     console.log(item);
+    console.log(item.price);
     const newCart = [...cart, item];
     setCart(newCart);
+
+    const newQuantity = [...quantity, 1];
+    setQuantity(newQuantity);
+
+    const newPrice = [...price, Number(item.price)];
+    setPrice(newPrice);
+    console.log(price);
   };
 
   return (
-    <div className="menu-container" key={meal.id} onClick={() => handleAddCard(meal.id)}>
+    <div className="menu-container" onClick={() => handleAddCard(meal.id)}>
       <div className="col1">
         <h3>{meal.title}</h3>
         <p>{meal.description}</p>
