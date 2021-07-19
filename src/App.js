@@ -46,7 +46,7 @@ function App() {
           })}
         </div>
 
-        <ShoppingCart products={products} />
+        <ShoppingCart products={products} setProducts={setProducts} />
       </div>
     </div>
   );
