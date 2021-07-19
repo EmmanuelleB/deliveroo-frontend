@@ -2,28 +2,16 @@ import "./Category.css";
 import Menu from "../menu/Menu";
 
 const Categoty = (props) => {
-  const { bigTitle, meals, data, cart, setCart, quantity, setQuantity, price, setPrice } = props;
+  const { name, meals, products, setProducts } = props;
 
   return (
     <>
       <div>
-        <h2>{bigTitle}</h2>
+        <h2>{name}</h2>
 
         <div className="menus-container">
           {meals.map((meal) => {
-            return (
-              <Menu
-                key={meal.id}
-                meal={meal}
-                data={data}
-                cart={cart}
-                setCart={setCart}
-                quantity={quantity}
-                setQuantity={setQuantity}
-                price={price}
-                setPrice={setPrice}
-              />
-            );
+            return <Menu key={meal.id} meal={meal} products={products} setProducts={setProducts} />;
           })}
         </div>
       </div>

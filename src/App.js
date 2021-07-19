@@ -9,11 +9,7 @@ import ShoppingCart from "./components/shoppingCart/ShoppingCart";
 function App() {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-  const [cart, setCart] = useState([]);
-  const [quantity, setQuantity] = useState([]);
-  const [price, setPrice] = useState([0]);
-
-  const categories = data.categories;
+  const [products, setProducts] = useState([]);
 
   const fetchData = async () => {
     try {
@@ -37,25 +33,20 @@ function App() {
       <Presentation data={data} />
       <div className="page-container">
         <div className="colum-menu">
-          {categories.slice(0, 5).map((category, index) => {
+          {data.categories.slice(0, 5).map((category, index) => {
             return (
               <Category
                 key={index}
-                bigTitle={category.name}
+                name={category.name}
                 meals={category.meals}
-                data={data}
-                cart={cart}
-                setCart={setCart}
-                quantity={quantity}
-                setQuantity={setQuantity}
-                price={price}
-                setPrice={setPrice}
+                products={products}
+                setProducts={setProducts}
               />
             );
           })}
         </div>
 
-        <ShoppingCart cart={cart} quantity={quantity} setQuantity={setQuantity} price={price} />
+        <ShoppingCart products={products} />
       </div>
     </div>
   );

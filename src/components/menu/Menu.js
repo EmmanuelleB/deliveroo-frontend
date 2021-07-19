@@ -1,32 +1,15 @@
 import "./Menu.css";
 
 const Menu = (props) => {
-  const { meal, data, cart, setCart, quantity, setQuantity, price, setPrice } = props;
+  const { meal, products, setProducts } = props;
 
-  const handleAddCard = (idItem) => {
-    let item = null;
-    data.categories.forEach((category) =>
-      category.meals.forEach((meal) => {
-        if (meal.id === idItem) {
-          item = meal;
-        }
-      })
-    );
-    console.log(item);
-    console.log(item.price);
-    const newCart = [...cart, item];
-    setCart(newCart);
-
-    const newQuantity = [...quantity, 1];
-    setQuantity(newQuantity);
-
-    const newPrice = [...price, Number(item.price)];
-    setPrice(newPrice);
-    console.log(price);
+  const handleAddProduct = () => {
+    const newProducts = [...products, { id: meal.id, title: meal.title, price: meal.price }];
+    setProducts(newProducts);
   };
 
   return (
-    <div className="menu-container" onClick={() => handleAddCard(meal.id)}>
+    <div className="menu-container" onClick={handleAddProduct}>
       <div className="col1">
         <h3>{meal.title}</h3>
         <p>{meal.description}</p>
