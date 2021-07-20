@@ -36,16 +36,20 @@ function App() {
       <Presentation data={data} />
       <div className="page-container flex">
         <div className="column-menu">
-          {data.categories.slice(0, 5).map((category, index) => {
-            return (
-              <Category
-                key={index}
-                name={category.name}
-                meals={category.meals}
-                products={products}
-                setProducts={setProducts}
-              />
-            );
+          {data.categories.map((category, index) => {
+            if (category.meals.length === 0) {
+              return null;
+            } else {
+              return (
+                <Category
+                  key={index}
+                  name={category.name}
+                  meals={category.meals}
+                  products={products}
+                  setProducts={setProducts}
+                />
+              );
+            }
           })}
         </div>
         <div className="column-shoppingCart">
