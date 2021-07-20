@@ -1,12 +1,11 @@
-.header-container{
-    height: 9vh;
-    background-color: white;
-    border-bottom: 1px solid rgb(233, 230, 230); 
-    display: flex;
-    align-items: center;
+.header-container {
+  height: 9vh;
+  background-color: white;
+  border-bottom: 1px solid rgb(233, 230, 230);
+  display: flex;
+  align-items: center;
 }
 
-
-.header-container img{
-    width: 150px;
+.header-container img {
+  width: 150px;
 }

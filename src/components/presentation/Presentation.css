@@ -1,28 +1,28 @@
-.presentation-container{
-    background-color: white;
-    padding: 40px 0;
+.presentation-container {
+  background-color: white;
+  padding: 40px 0;
 }
 
-.presentation-container .flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.presentation-container .page-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.presentation-container img{
-    margin-left:20px ;
-    border-radius: 5px;
+.presentation-container img {
+  margin-left: 20px;
+  border-radius: 5px;
 }
 
-h1{
-    font-size: 32px;
-    font-weight: bold;
-    margin: 1.6em 0;
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 1.6em 0;
 }
 
-p{
-    font-size: 18px;
-    font-weight: 300;
-    color: rgb(146, 145, 145);
-    line-height: 1.5em;
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(146, 145, 145);
+  line-height: 1.5em;
 }

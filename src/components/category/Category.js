@@ -6,14 +6,12 @@ const Categoty = (props) => {
 
   return (
     <>
-      <div>
-        <h2>{name}</h2>
+      <h2>{name}</h2>
 
-        <div className="menus-container">
-          {meals.map((meal) => {
-            return <Menu key={meal.id} meal={meal} products={products} setProducts={setProducts} />;
-          })}
-        </div>
+      <div className="menus-container">
+        {meals.map((meal) => {
+          return <Menu key={meal.id} meal={meal} products={products} setProducts={setProducts} />;
+        })}
       </div>
     </>
   );

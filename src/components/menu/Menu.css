@@ -5,7 +5,11 @@
   padding: 20px;
   display: flex;
   margin: 15px 30px 15px 0;
+}
+.menu-container:hover {
   cursor: pointer;
+
+  box-shadow: 2px 2px 5px 2px rgb(233, 230, 230);
 }
 
 .menu-container .col1 {

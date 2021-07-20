@@ -5,6 +5,9 @@ import Header from "./components/header/Header";
 import Presentation from "./components/presentation/Presentation";
 import Category from "./components/category/Category";
 import ShoppingCart from "./components/shoppingCart/ShoppingCart";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+library.add(faStar);
 
 function App() {
   const [data, setData] = useState({});
@@ -31,8 +34,8 @@ function App() {
     <div>
       <Header />
       <Presentation data={data} />
-      <div className="page-container">
-        <div className="colum-menu">
+      <div className="page-container flex">
+        <div className="column-menu">
           {data.categories.slice(0, 5).map((category, index) => {
             return (
               <Category
@@ -45,8 +48,9 @@ function App() {
             );
           })}
         </div>
-
-        <ShoppingCart products={products} setProducts={setProducts} />
+        <div className="column-shoppingCart">
+          <ShoppingCart products={products} setProducts={setProducts} />
+        </div>
       </div>
     </div>
   );
