@@ -1,6 +1,7 @@
 .presentation-container {
   background-color: white;
-  padding: 40px 0;
+  padding: 3em 0;
+  margin-top: 8vh;
 }
 
 .presentation-container .page-container {
@@ -8,21 +9,40 @@
   justify-content: space-between;
   align-items: center;
 }
+.presentation-container .col1 {
+  max-width: 65%;
+}
 
 .presentation-container img {
-  margin-left: 20px;
+  margin-left: 3em;
   border-radius: 5px;
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
 }
 
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 1.6em 0;
+@media (max-width: 1200px) {
+  .presentation-container img {
+    margin-left: 2em;
+  }
 }
 
-p {
-  font-size: 18px;
-  font-weight: 300;
-  color: rgb(146, 145, 145);
-  line-height: 1.5em;
+@media (max-width: 960px) {
+  .presentation-container {
+    padding: 2em 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .presentation-container .page-container {
+    display: block;
+  }
+  .presentation-container .col1 {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+  .presentation-container img {
+    margin-left: 0;
+    width: 100%;
+  }
 }

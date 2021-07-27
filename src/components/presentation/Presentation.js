@@ -9,7 +9,7 @@ const Presentation = (props) => {
           <h1>{data.restaurant.name}</h1>
           <p>{data.restaurant.description}</p>
         </div>
-        <img src={data.restaurant.picture} alt="restaurant" style={{ width: 400 }} />
+        <img src={data.restaurant.picture} alt="restaurant" />
       </div>
     </div>
   );

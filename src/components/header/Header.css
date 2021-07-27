@@ -4,8 +4,23 @@
   border-bottom: 1px solid rgb(233, 230, 230);
   display: flex;
   align-items: center;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+}
+
+.header-container .page-container {
+  width: 100%;
 }
 
 .header-container img {
   width: 150px;
+}
+
+@media (max-width: 960px) {
+  .header-container .page-container {
+    display: flex;
+    justify-content: center;
+  }
 }

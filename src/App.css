@@ -1,9 +1,23 @@
 /* Other rules */
 .page-container {
-  width: 1250px;
+  max-width: 1200px;
   margin: 0 auto;
+  /* border: 2px solid red; */
 }
 
+/*TITLES & FRONTS */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 1.6em 0;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(146, 145, 145);
+  line-height: 1.5em;
+}
+/*POSITION */
 .flex {
   display: flex;
   justify-content: space-between;
@@ -16,4 +30,26 @@
 .page-container .column-shoppingCart {
   width: 30%;
   margin-top: 3em;
+}
+
+@media (max-width: 1200px) {
+  .page-container {
+    margin: 0 2em;
+  }
+}
+
+@media (max-width: 960px) {
+  .flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .page-container .column-menu {
+    width: 100%;
+  }
+
+  .page-container .column-shoppingCart {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
 }

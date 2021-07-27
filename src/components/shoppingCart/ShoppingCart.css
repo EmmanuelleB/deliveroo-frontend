@@ -63,12 +63,13 @@
 
 .product-description {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  align-items: center;
 }
 
 .product-description span {
   font-weight: 300;
+  font-size: 12px;
 }
 
 .btn-less,
@@ -94,6 +95,9 @@
   font-weight: 300;
   font-size: 16px;
   padding-left: 5px;
+}
+.part-2 p:nth-child(1) {
+  margin-bottom: 1em;
 }
 .part-3 {
   padding: 20px 0;
