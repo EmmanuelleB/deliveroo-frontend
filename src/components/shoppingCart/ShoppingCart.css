@@ -1,4 +1,5 @@
 .no-shopping-basket {
+  margin-top: 2em;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
@@ -22,6 +23,7 @@
 }
 
 .shopping-basket {
+  margin-top: 2em;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
