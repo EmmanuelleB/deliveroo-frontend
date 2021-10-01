@@ -62,14 +62,18 @@
 }
 
 .product-description {
+  font-weight: 300;
+  font-size: 12px;
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.product-description span {
+.product-description .products-price {
+  text-align: right;
   font-weight: 300;
   font-size: 12px;
+  min-width: 25%;
 }
 
 .btn-less,
