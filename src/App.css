@@ -2,7 +2,6 @@
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
-  /* border: 2px solid red; */
 }
 
 /*TITLES & FRONTS */
@@ -30,6 +29,14 @@ p {
 .page-container .column-shoppingCart {
   width: 30%;
   margin-top: 3em;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 90vh;
 }
 
 @media (max-width: 1200px) {

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
+import ReactLoading from "react-loading";
 import Header from "./components/header/Header";
 import Presentation from "./components/presentation/Presentation";
 import Category from "./components/category/Category";
@@ -29,7 +30,9 @@ function App() {
   }, []);
 
   return isLoading ? (
-    <span>En cours de chargement ...</span>
+    <div className="center">
+      <ReactLoading type="bubbles" color="#02cdbd" height={300} width={150} />
+    </div>
   ) : (
     <div>
       <Header />
