@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import ReactLoading from "react-loading";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 import Presentation from "./components/presentation/Presentation";
 import Category from "./components/category/Category";
 import ShoppingCart from "./components/shoppingCart/ShoppingCart";
@@ -59,6 +60,7 @@ function App() {
           <ShoppingCart products={products} setProducts={setProducts} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

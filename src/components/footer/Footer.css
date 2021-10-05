@@ -1,0 +1,15 @@
+.footer-container {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  background-color: #02cdbd;
+  color: white;
+}
+.footer-container p {
+  font-size: 12px;
+  color: white;
+}
+
+.footer-container span {
+  font-weight: 700;
+}
